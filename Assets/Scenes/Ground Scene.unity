@@ -761,7 +761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443928, guid: 9e0333bdd5f056e44a03fbf7472d26f1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.6582701
+      value: 4.51
       objectReference: {fileID: 0}
     - target: {fileID: 443928, guid: 9e0333bdd5f056e44a03fbf7472d26f1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -802,6 +802,10 @@ Prefab:
     - target: {fileID: 468264, guid: 9e0333bdd5f056e44a03fbf7472d26f1, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.65690404
+      objectReference: {fileID: 0}
+    - target: {fileID: 112420, guid: 9e0333bdd5f056e44a03fbf7472d26f1, type: 2}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e0333bdd5f056e44a03fbf7472d26f1, type: 2}

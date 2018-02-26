@@ -32,6 +32,7 @@ public class EnemyAttack : MonoBehaviour
             playerInRange = true;
             Debug.Log("player in range");            
             anim.SetTrigger("Swing");
+            anim.ResetTrigger("MoveToPlayer");
 
         }
     }
@@ -45,6 +46,8 @@ public class EnemyAttack : MonoBehaviour
             // ... the player is no longer in range.
             playerInRange = false;
             Debug.Log("player exit range");
+            anim.ResetTrigger("Swing");
+            anim.SetTrigger("MoveToPlayer");
         }
     }
 
