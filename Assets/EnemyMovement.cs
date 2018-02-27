@@ -39,12 +39,7 @@ public class EnemyMovement : MonoBehaviour
         if (other.gameObject.tag == "NPC")
         {
             // ... too close to an ally.
-            Debug.Log("NPC distance adjust");
-
-            Vector3 newPos = Vector3.Normalize(transform.position - other.transform.position) ;
-            nav.SetDestination(newPos);
-            anim.ResetTrigger("Swing");
-            anim.SetTrigger("MoveToPlayer");
+            Debug.Log("NPC distance adjust ??");
 
         }
     }
@@ -54,7 +49,7 @@ public class EnemyMovement : MonoBehaviour
         //if (other.gameObject.tag == "NPC")
         {
            //reset nav to the player
-            nav.SetDestination(player.position);
+            nav.SetDestination(findAttackPoint());
             anim.SetTrigger("MoveToPlayer");
             Debug.Log("Nav reset to player");
         }
@@ -63,7 +58,7 @@ public class EnemyMovement : MonoBehaviour
     Vector3 findAttackPoint()
     {
 
-        Vector3 offset = new Vector3(Random.Range(-2, 2), Random.Range(-2, 2), Random.Range(-2, 2));
+        Vector3 offset = new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), Random.Range(-1, 1));
         return player.position + offset;
     }
 }
